@@ -1,0 +1,195 @@
+﻿@model app_ds501.Models.Metodo
+
+@{
+    ViewData["Title"] = "Metodos de pago";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section EstiloDT {
+    <link href="~/lib/datatables.net/css/jquery.dataTables.min.css" rel="stylesheet" />
+}
+
+<hr />
+
+<div class="container mt-5">
+    <div class="row justify-content-center ">
+        <h1>Listado de Metodos de Pago</h1>
+        <div class="table-responsive">
+            <table id="tb_metodo" class="table table-hover" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayNameFor(per => per.codigo_metodo)</th>
+                        <th>@Html.DisplayNameFor(per => per.nombre)</th>
+                        <th>@Html.DisplayNameFor(per => per.descripcion)</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Formulario" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form>
+                                <div class="form-group">
+                                    <label asp-for="codigo_metodo" class="control-label"></label>
+                                    <input asp-for="codigo_metodo" id="codigo_metodo" class="form-control" />
+                                    <span asp-validation-for="codigo_metodo" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="nombre" class="control-label"></label>
+                                    <input asp-for="nombre" id="nombre" class="form-control" />
+                                    <span asp-validation-for="nombre" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="descripcion" class="control-label"></label>
+                                    <input asp-for="descripcion" id="descripcion" class="form-control" />
+                                    <span asp-validation-for="descripcion" class="text-danger"></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="fas fa-window-close"></i> Cerrar
+                    </button>
+                    <button type="button" id="btn_grabar" class="btn btn-primary"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/lib/datatables.net/js/jquery.dataTables.js"></script>
+    <script src="~/lib/datatables.net/js/dataTables.buttons.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#tb_metodo").DataTable({
+                "ajax": {
+                    "url": "@Url.Action("Listar", "Metodo")",
+                    "type": "GET",
+                    "datatype": "json"
+                },
+                "columns": [
+                    { "data": "codigo_metodo" },
+                    { "data": "nombre" },
+                    { "data": "descripcion" },
+                    {
+                        "data": "codigo_metodo", "render": function (data) {
+                            return "<button class='btn btn-success mx-1' type='button' onclick='AbrirRegistro(\"" + data + "\")'><i class='far fa-edit'></i></button>" +
+                                "<button class='btn btn-danger mx-1' type='button' onclick='Eliminar(\"" + data + "\")'><i class='fas fa-trash-alt'></i></button>"
+                        }
+                    }
+                ],
+                "order": [[1, "asc"]],
+                "pageLength": 10,
+                dom: "Bfrtip",
+                buttons: [
+                    {
+                        text: "Registrar Metodo",
+                        attr: { class: "btn btn-primary" },
+                        action: function () {
+                            AbrirRegistro("")
+                        }
+                    }
+                ]
+            });
+        });
+
+        function AbrirRegistro(codigo_metodo) {
+            if (codigo_metodo !== "") {
+                jQuery.ajax({
+                    url: "@Url.Action("Consultar", "Metodo")" + "?codigo_metodo=" + codigo_metodo,
+                    type: "GET",
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        if (data != null) {
+                            $("#codigo_metodo").attr("readonly", true);
+
+                            $("#codigo_metodo").val(data.codigo_metodo);
+                            $("#nombre").val(data.nombre);
+                            $("#descripcion").val(data.descripcion);
+                        }
+                    }
+                });
+                $(".modal-title").text("Editar Metodo");
+                $("#btn_grabar").html("<i class='fas fa-save'></i> Guardar Cambios");
+
+            } else {
+                $("#codigo_metodo").attr("readonly", false);
+
+                $("#codigo_metodo").val("");
+                $("#nombre").val("");
+                $("#descripcion").val("");
+
+                $(".modal-title").text("Registrar Metodo");
+                $("#btn_grabar").html("<i class='fas fa-save'></i> Guardar Cambios");
+            }
+
+            $("#Formulario").modal("show");
+        }
+
+        $("#btn_grabar").click(function (e) {
+            let metodo = {
+                "codigo_metodo": $("#codigo_metodo").val(),
+                "nombre": $("#nombre").val(),
+                "descripcion": $("#descripcion").val()
+            };
+
+            jQuery.ajax({
+                url: "@Url.Action("Grabar", "Metodo")",
+                type: "POST",
+                data: JSON.stringify(metodo),
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    if (data.resultado) {
+                        $("#tb_metodo").DataTable().ajax.reload();
+                        $("#Formulario").modal("hide");
+                    } else {
+                        alert("No fue posible grabar la información");
+                    }
+                },
+                error: function (error) {
+                    alert("Ocurrió un error al intentar grabar la información");
+                }
+            });
+        });
+
+        function Eliminar(codigo_metodo) {
+            if (confirm("¿Seguro de eliminar?")) {
+                jQuery.ajax({
+                    url: "@Url.Action("Borrar", "Metodo")" + "?codigo_metodo=" + codigo_metodo,
+                    type: "GET",
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        if (data.resultado) {
+                            $("#tb_metodo").DataTable().ajax.reload();
+                        } else {
+                            alert("No se pudo eliminar el método de pago: " + data.mensaje);
+                        }
+                    },
+                    error: function (error) {
+                        alert("Ocurrió un error al intentar eliminar el método de pago.");
+                    }
+                });
+            }
+        }
+    </script>
+}
+
+

@@ -1,0 +1,189 @@
+﻿@model app_ds501.Models.Promocion
+
+@{
+    ViewData["Title"] = "Promociones";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section EstiloDT {
+    <link href="~/lib/datatables.net/css/jquery.dataTables.min.css" rel="stylesheet" />
+}
+
+
+<hr />
+
+<div class="container mt-5">
+    <div class="row justify-content-center ">
+        <h1>Listado de Promociones</h1>
+        <div class="table-responsive">
+            <table id="tb_promocion" class="table table-hover" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayNameFor(per => per.codigo_promocion)</th>
+                        <th>@Html.DisplayNameFor(per => per.nombre)</th>
+                        <th>@Html.DisplayNameFor(per => per.descripcion)</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Formulario" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form>
+                                <div class="form-group">
+                                    <label asp-for="codigo_promocion" class="control-label"></label>
+                                    <input asp-for="codigo_promocion" id="codigo_promocion" class="form-control" />
+                                    <span asp-validation-for="codigo_promocion" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="nombre" class="control-label"></label>
+                                    <input asp-for="nombre" id="nombre" class="form-control" />
+                                    <span asp-validation-for="nombre" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="descripcion" class="control-label"></label>
+                                    <input asp-for="descripcion" id="descripcion" class="form-control" />
+                                    <span asp-validation-for="descripcion" class="text-danger"></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="fas fa-window-close"></i> Cerrar
+                    </button>
+                    <button type="button" id="btn_grabar" class="btn btn-primary"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script src="~/lib/datatables.net/js/jquery.dataTables.js"></script>
+    <script src="~/lib/datatables.net/js/dataTables.buttons.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#tb_promocion").DataTable({
+                "ajax": {
+                    "url": "@Url.Action("Listar", "Promocion")",
+                    "type": "GET",
+                    "datatype": "json"
+                },
+                "columns": [
+                    { "data": "codigo_promocion" },
+                    { "data": "nombre" },
+                    { "data": "descripcion" },
+                    {
+                        "data": "codigo_promocion", "render": function (data) {
+                            return "<button class='btn btn-success mx-1' type='button' onclick='AbrirRegistro(\"" + data + "\")'><i class='far fa-edit'></i></button>" +
+                                "<button class='btn btn-danger mx-1' type='button' onclick='Eliminar(\"" + data + "\")'><i class='fas fa-trash-alt'></i></button>"
+                        }
+                    }
+                ],
+                "order": [[1, "asc"]],
+                "pageLength": 10,
+                dom: "Bfrtip",
+                buttons: [
+                    {
+                        text: "Registrar Promocion",
+                        attr: { class: "btn btn-primary" },
+                        action: function () {
+                            AbrirRegistro("")
+                        }
+                    }
+                ]
+            });
+        });
+
+        function AbrirRegistro(codigo_promocion) {
+            if (codigo_promocion !== "") {
+                jQuery.ajax({
+                    url: "@Url.Action("Consultar", "Promocion")" + "?codigo_promocion=" + codigo_promocion,
+                    type: "GET",
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        if (data != null) {
+                            $("#codigo_promocion").attr("readonly", true);
+
+                            $("#codigo_promocion").val(data.codigo_promocion);
+                            $("#nombre").val(data.nombre);
+                            $("#descripcion").val(data.descripcion);
+                        }
+                    }
+                });
+                $(".modal-title").text("Editar Servicio");
+                $("#btn_grabar").html("<i class='fas fa-save'></i> Guardar Cambios");
+
+            } else {
+                $("#codigo_promocion").attr("readonly", false);
+
+                $("#codigo_promocion").val("");
+                $("#nombre").val("");
+                $("#descripcion").val("");
+
+                $(".modal-title").text("Registrar Servicio");
+                $("#btn_grabar").html("<i class='fas fa-save'></i> Guardar Cambios");
+            }
+
+            $("#Formulario").modal("show");
+        }
+
+        $("#btn_grabar").click(function (e) {
+            let promocion = {
+                "codigo_promocion": $("#codigo_promocion").val(),
+                "nombre": $("#nombre").val(),
+                "descripcion": $("#descripcion").val(),
+            }
+
+            jQuery.ajax({
+                url: "@Url.Action("Grabar", "Promocion")",
+                type: "POST",
+                data: JSON.stringify(promocion),
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    if (data.resultado) {
+                        $("#tb_promocion").DataTable().ajax.reload();
+                        $("#Formulario").modal("hide");
+                    } else {
+                        alert("No fue posible grabar la información");
+                    }
+                },
+                error: function (error) {
+                    alert(error);
+                }
+            });
+        });
+
+        function Eliminar(codigo_promocion) {
+            if (confirm("¿Seguro de eliminar?")) {
+                jQuery.ajax({
+                    url: "@Url.Action("Borrar", "Promocion")" + "?codigo_promocion=" + codigo_promocion,
+                    type: "GET",
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        if (data.resultado) {
+                            $("#tb_promocion").DataTable().ajax.reload();
+                        }
+                    }
+                });
+            }
+        }
+    </script>
+}

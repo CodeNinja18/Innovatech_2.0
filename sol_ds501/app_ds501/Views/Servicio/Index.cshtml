@@ -1,0 +1,268 @@
+﻿@model app_ds501.Models.Servicio
+
+@{
+    ViewData["Title"] = "Servicios";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section EstiloDT {
+    <link href="~/lib/datatables.net/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/lib/datatables.net-buttons-dt/css/buttons.dataTables.min.css" />
+
+    <link href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/buttons/2.4.2/css/buttons.dataTables.min.css" rel=" stylesheet" />
+
+    <style>
+        .btn-exportar-excel {
+            background-color: #198754 !important;
+            color: white !important;
+        }
+
+        .btn-exportar-pdf {
+            background-color: #dc3545 !important;
+            color: white !important;
+        }
+
+        .modal-header-edit {
+            background-color: #2ca149; /* Color de fondo verde */
+            color: white; /* Color del texto blanco */
+        }
+
+        .modal-header-registrar {
+            background-color: #4e73df; /* Color de fondo azul celeste */
+            color: white; /* Color del texto blanco */
+        }
+
+        .btn-guardar-cambios {
+            background-color: #2ca149; /* Color de fondo verde oscuro */
+            border-color: #2ca149; /* Color del borde del botón */
+            color: white; /* Color del texto blanco */
+        }
+
+        .btn-registrar-cliente {
+            background-color: #4e73df; /* Color de fondo azul celeste */
+            border-color: #4e73df; /* Color del borde del botón */
+            color: white; /* Color del texto blanco */
+        }
+
+        /* Estilo para evitar el cambio de color al hacer hover */
+        .btn-no-hover:hover {
+            background-color: inherit !important; /* Mantenemos el color de fondo */
+        }
+    </style>
+}
+
+
+<hr />
+
+<div class="container mt-5">
+    <div class="row justify-content-center ">
+        <h1>Listado de Servicios</h1>
+        <div class="table-responsive">
+            <table id="tb_servicio" class="table table-hover" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayNameFor(per => per.codigo_servicio)</th>
+                        <th>@Html.DisplayNameFor(per => per.nombre)</th>
+                        <th>@Html.DisplayNameFor(per => per.descripcion)</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Formulario" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form>
+                                <div class="form-group">
+                                    <label asp-for="codigo_servicio" class="control-label"></label>
+                                    <input asp-for="codigo_servicio" id="codigo_servicio" class="form-control" />
+                                    <span asp-validation-for="codigo_servicio" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="nombre" class="control-label"></label>
+                                    <input asp-for="nombre" id="nombre" class="form-control" />
+                                    <span asp-validation-for="nombre" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="descripcion" class="control-label"></label>
+                                    <input asp-for="descripcion" id="descripcion" class="form-control" />
+                                    <span asp-validation-for="descripcion" class="text-danger"></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="fas fa-window-close"></i> Cerrar
+                    </button>
+                    <button type="button" id="btn_grabar" class="btn btn-primary"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/lib/datatables.net/js/jquery.dataTables.js"></script>
+    <script src="~/lib/datatables.net/js/dataTables.buttons.min.js"></script>
+    <script src="~/lib/datatables.net/js/jquery.dataTables.js"></script>
+    <script src="~/lib/datatables.net/js/dataTables.buttons.min.js"></script>
+    <script src="~/lib/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="~/lib/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="~/lib/jszip/dist/jszip.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.html5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.print.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#tb_servicio").DataTable({
+                "ajax": {
+                    "url": "@Url.Action("Listar", "Servicio")",
+                    "type": "GET",
+                    "datatype": "json"
+                },
+                "columns": [
+                    { "data": "codigo_servicio" },
+                    { "data": "nombre" },
+                    { "data": "descripcion" },
+                    {
+                        "data": "codigo_servicio", "render": function (data) {
+                            return "<button class='btn btn-success mx-1' type='button' onclick='AbrirRegistro(\"" + data + "\")'><i class='far fa-edit'></i></button>" +
+                                "<button class='btn btn-danger mx-1' type='button' onclick='Eliminar(\"" + data + "\")'><i class='fas fa-trash-alt'></i></button>"
+                        }
+                    }
+                ],
+                "order": [[1, "asc"]],
+                "pageLength": 10,
+                dom: "Bfrtip",
+                buttons: [
+                    {
+                        text: "Registrar Servicio",
+                        attr: { class: "btn btn-primary" },
+                        action: function () {
+                            AbrirRegistro("")
+                        }
+                    },
+                            {
+                        extend: 'excelHtml5',
+                        text: 'Exportar Excel',
+                        filename: 'Reporte Clientes',
+                        title: 'Lista de Clientes',
+                        exportOptions: {
+                            columns: [0, 1, 2 ] // Índices de las columnas a exportar
+                        },
+                        className: 'btn-exportar-excel'
+                    },
+                    {
+                        extend: 'pdfHtml5',
+                        text: 'Exportar PDF',
+                        filename: 'Reporte Empleados',
+                        title: 'Lista de Contactos',
+                        exportOptions: {
+                            columns: [0, 1, 2]
+                        },
+                        className: 'btn-exportar-pdf',
+                    }
+                ]
+            });
+        });
+
+        function AbrirRegistro(codigo_servicio) {
+            if (codigo_servicio !== "") {
+                jQuery.ajax({
+                    url: "@Url.Action("Consultar", "Servicio")" + "?codigo_servicio=" + codigo_servicio,
+                    type: "GET",
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        if (data != null) {
+                            $("#codigo_servicio").attr("readonly", true);
+
+                            $("#codigo_servicio").val(data.codigo_servicio);
+                            $("#nombre").val(data.nombre);
+                            $("#descripcion").val(data.descripcion);
+                        }
+                    }
+                });
+                $(".modal-title").text("Editar Servicio");
+                $(".modal-header").removeClass("modal-header-registrar").addClass("modal-header-edit");
+                $("#btn_grabar").removeClass("btn-registrar-cliente").addClass("btn-guardar-cambios");
+                $("#btn_grabar").html("<i class='fas fa-save'></i> Actualizar Servicio");
+
+            } else {
+                $("#codigo_servicio").attr("readonly", false);
+
+                $("#codigo_servicio").val("");
+                $("#nombre").val("");
+                $("#descripcion").val("");
+
+                $(".modal-title").text("Registrar Servicio");
+                $(".modal-header").removeClass("modal-header-edit").addClass("modal-header-registrar");
+                $("#btn_grabar").removeClass("btn-guardar-cambios").addClass("btn-registrar-cliente");
+                $("#btn_grabar").html("<i class='fas fa-save'></i> Guardar Cambios");
+            }
+
+            $("#Formulario").modal("show");
+        }
+
+        $("#btn_grabar").click(function (e) {
+            let servicio = {
+                "codigo_servicio": $("#codigo_servicio").val(),
+                "nombre": $("#nombre").val(),
+                "descripcion": $("#descripcion").val(),
+            }
+
+            jQuery.ajax({
+                url: "@Url.Action("Grabar", "Servicio")",
+                type: "POST",
+                data: JSON.stringify(servicio),
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    if (data.resultado) {
+                        $("#tb_servicio").DataTable().ajax.reload();
+                        $("#Formulario").modal("hide");
+                    } else {
+                        alert("No fue posible grabar la información");
+                    }
+                },
+                error: function (error) {
+                    alert(error);
+                }
+            });
+        });
+
+        function Eliminar(codigo_servicio) {
+            if (confirm("¿Seguro de eliminar?")) {
+                jQuery.ajax({
+                    url: "@Url.Action("Borrar", "Servicio")" + "?codigo_servicio=" + codigo_servicio,
+                    type: "GET",
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        if (data.resultado) {
+                            $("#tb_servicio").DataTable().ajax.reload();
+                        }
+                    }
+                });
+            }
+        }
+    </script>
+}

@@ -1,0 +1,554 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\views\\servicio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\views\\servicio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\views\\usuario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\views\\usuario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\views\\metodo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\views\\metodo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\views\\promocion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\views\\promocion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\views\\personal\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\views\\personal\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\views\\inscripcion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\views\\inscripcion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\controllers\\serviciocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\controllers\\serviciocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\libman.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\libman.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\models\\servicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\models\\servicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\models\\personal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\models\\personal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\controllers\\promocioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\controllers\\promocioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\controllers\\personalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\controllers\\personalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\models\\promocion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\models\\promocion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\controllers\\inscripcioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\controllers\\inscripcioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\controllers\\metodocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\controllers\\metodocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\models\\inscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\models\\inscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|c:\\users\\luis\\pictures\\sol_ds501\\app_ds501\\models\\metodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92B79A2-087F-480C-BA5D-F4D260F3BDCA}|app_ds501\\app_ds501.csproj|solutionrelative:app_ds501\\models\\metodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Views\\Personal\\Index.cshtml",
+              "RelativeDocumentMoniker": "app_ds501\\Views\\Personal\\Index.cshtml",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Views\\Personal\\Index.cshtml",
+              "RelativeToolTip": "app_ds501\\Views\\Personal\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-20T19:21:35.599Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PersonalController.cs",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Controllers\\PersonalController.cs",
+              "RelativeDocumentMoniker": "app_ds501\\Controllers\\PersonalController.cs",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Controllers\\PersonalController.cs",
+              "RelativeToolTip": "app_ds501\\Controllers\\PersonalController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T19:32:42.202Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Views\\Servicio\\Index.cshtml",
+              "RelativeDocumentMoniker": "app_ds501\\Views\\Servicio\\Index.cshtml",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Views\\Servicio\\Index.cshtml",
+              "RelativeToolTip": "app_ds501\\Views\\Servicio\\Index.cshtml",
+              "ViewState": "AQIAAJEAAAAAAAAAAAAIwKEAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-24T17:15:01.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ServicioController.cs",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Controllers\\ServicioController.cs",
+              "RelativeDocumentMoniker": "app_ds501\\Controllers\\ServicioController.cs",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Controllers\\ServicioController.cs",
+              "RelativeToolTip": "app_ds501\\Controllers\\ServicioController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCMAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T17:02:59.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "app_ds501\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "app_ds501\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAiwEoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-20T19:20:00.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "app_ds501\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "app_ds501\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-25T18:31:29.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Views\\Usuario\\Index.cshtml",
+              "RelativeDocumentMoniker": "app_ds501\\Views\\Usuario\\Index.cshtml",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Views\\Usuario\\Index.cshtml",
+              "RelativeToolTip": "app_ds501\\Views\\Usuario\\Index.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABUAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-25T18:24:07.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "app_ds501\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "app_ds501\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAB5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-20T21:23:36.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "app_ds501\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "app_ds501\\Controllers\\UsuarioController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T18:20:15.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Views\\Cliente\\Index.cshtml",
+              "RelativeDocumentMoniker": "app_ds501\\Views\\Cliente\\Index.cshtml",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Views\\Cliente\\Index.cshtml",
+              "RelativeToolTip": "app_ds501\\Views\\Cliente\\Index.cshtml",
+              "ViewState": "AQIAAJkAAAAAAAAAAAAAABMBAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-24T21:21:30.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Program.cs",
+              "RelativeDocumentMoniker": "app_ds501\\Program.cs",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Program.cs",
+              "RelativeToolTip": "app_ds501\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T18:24:55.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "app_ds501\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "app_ds501\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-25T18:38:59.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "app_ds501\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "app_ds501\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T18:20:24.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "app_ds501\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "app_ds501\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-26T00:31:30.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Personal.cs",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Models\\Personal.cs",
+              "RelativeDocumentMoniker": "app_ds501\\Models\\Personal.cs",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Models\\Personal.cs",
+              "RelativeToolTip": "app_ds501\\Models\\Personal.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T22:23:18.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "libman.json",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\libman.json",
+              "RelativeDocumentMoniker": "app_ds501\\libman.json",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\libman.json",
+              "RelativeToolTip": "app_ds501\\libman.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-24T22:47:38.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "app_ds501\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "app_ds501\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-26T00:27:13.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Views\\Promocion\\Index.cshtml",
+              "RelativeDocumentMoniker": "app_ds501\\Views\\Promocion\\Index.cshtml",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Views\\Promocion\\Index.cshtml",
+              "RelativeToolTip": "app_ds501\\Views\\Promocion\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-24T20:59:59.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Views\\Metodo\\Index.cshtml",
+              "RelativeDocumentMoniker": "app_ds501\\Views\\Metodo\\Index.cshtml",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Views\\Metodo\\Index.cshtml",
+              "RelativeToolTip": "app_ds501\\Views\\Metodo\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-24T17:45:16.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Views\\Inscripcion\\Index.cshtml",
+              "RelativeDocumentMoniker": "app_ds501\\Views\\Inscripcion\\Index.cshtml",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Views\\Inscripcion\\Index.cshtml",
+              "RelativeToolTip": "app_ds501\\Views\\Inscripcion\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-24T22:16:38.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\appsettings.json",
+              "RelativeDocumentMoniker": "app_ds501\\appsettings.json",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\appsettings.json",
+              "RelativeToolTip": "app_ds501\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-20T21:39:32.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Servicio.cs",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Models\\Servicio.cs",
+              "RelativeDocumentMoniker": "app_ds501\\Models\\Servicio.cs",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Models\\Servicio.cs",
+              "RelativeToolTip": "app_ds501\\Models\\Servicio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T17:04:37.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "app_ds501\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Models\\Usuario.cs",
+              "RelativeToolTip": "app_ds501\\Models\\Usuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T18:09:49.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "app_ds501\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "app_ds501\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T18:22:14.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Promocion.cs",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Models\\Promocion.cs",
+              "RelativeDocumentMoniker": "app_ds501\\Models\\Promocion.cs",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Models\\Promocion.cs",
+              "RelativeToolTip": "app_ds501\\Models\\Promocion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T17:04:34.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "PromocionController.cs",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Controllers\\PromocionController.cs",
+              "RelativeDocumentMoniker": "app_ds501\\Controllers\\PromocionController.cs",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Controllers\\PromocionController.cs",
+              "RelativeToolTip": "app_ds501\\Controllers\\PromocionController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T16:59:08.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Models\\Cliente.cs",
+              "RelativeDocumentMoniker": "app_ds501\\Models\\Cliente.cs",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Models\\Cliente.cs",
+              "RelativeToolTip": "app_ds501\\Models\\Cliente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T21:14:28.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "MetodoController.cs",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Controllers\\MetodoController.cs",
+              "RelativeDocumentMoniker": "app_ds501\\Controllers\\MetodoController.cs",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Controllers\\MetodoController.cs",
+              "RelativeToolTip": "app_ds501\\Controllers\\MetodoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T16:58:33.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "InscripcionController.cs",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Controllers\\InscripcionController.cs",
+              "RelativeDocumentMoniker": "app_ds501\\Controllers\\InscripcionController.cs",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Controllers\\InscripcionController.cs",
+              "RelativeToolTip": "app_ds501\\Controllers\\InscripcionController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T16:58:23.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Inscripcion.cs",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Models\\Inscripcion.cs",
+              "RelativeDocumentMoniker": "app_ds501\\Models\\Inscripcion.cs",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Models\\Inscripcion.cs",
+              "RelativeToolTip": "app_ds501\\Models\\Inscripcion.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAuwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T22:14:46.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "app_ds501\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "app_ds501\\Controllers\\ClienteController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAowCIAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T16:58:26.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Metodo.cs",
+              "DocumentMoniker": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Models\\Metodo.cs",
+              "RelativeDocumentMoniker": "app_ds501\\Models\\Metodo.cs",
+              "ToolTip": "C:\\Users\\LUIS\\Pictures\\sol_ds501\\app_ds501\\Models\\Metodo.cs",
+              "RelativeToolTip": "app_ds501\\Models\\Metodo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T17:40:21.261Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
